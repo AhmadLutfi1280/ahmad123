@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maaf Seng</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+            padding: 50px;
+            color: #ffffff;
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding:20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        h1 {
+            color: #ff69b4;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            color: #ffffff;
+            background-color: #ff69b4;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #ff1493;
+        }
+        .hidden-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hai Seng!</h1>
+        <p>Hai orang manis, aku minta maaf ya udh salah aku tadi. tpi sbnrnya bukan gitunya mksdku tadi seng, sekali lagi maaf ya seng. aku taunya udah bnyk kli aku minta maaf smamu seng, mungkin oun udh bsn kau sama permintaan maafku, tpi maafakan lah aku ya seng :) jgnlh marah² kau seng (T^T)</p>
+        <img src="chibi.png" alt="Chibi Lucu">
+        <button class="btn" onclick="showMessage()">klik seng</button>
+        <p class="hidden-message" id="virtual-hug">Love you forever together oktober september kalender ember jengger gender, hhe maaf ya g jls 🤗</p>
+    </div>
+    <audio id="background-music" controls style="display: none;">
+        <source src="musik.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        function showMessage() {
+            document.getElementById('virtual-hug').style.display = 'block';
+            document.getElementById('background-music').play();
+        }
+    </script>
+</body>
+</html>
